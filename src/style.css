@@ -1,14 +1,13 @@
+:root {
+  --blue: #00acdc;
+}
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 /* stylelint-disable-next-line rule-empty-line-before */
 .header {
   display: flex;
@@ -23,8 +22,6 @@ ul {
   margin-left: 50px;
   width: 40px;
   height: 40px;
-  top: 10px;
-  left: 50px;
 }
 
 .nav {
@@ -50,18 +47,19 @@ ul {
   text-transform: uppercase;
   line-height: 15px;
   font-size: 12px;
+  list-style-type: none;
 }
 
-.nav_item:not(:first-child) {
+.nav__link:not(:first-child) {
   margin-left: 20px;
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--blue);
 }
 
 .is-active::after {
-  background-color: #00acdc;
+  background-color: var(--blue);
   content: '';
   position: absolute;
   left: 0;
@@ -72,5 +70,5 @@ ul {
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
