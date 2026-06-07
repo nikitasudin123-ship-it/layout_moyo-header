@@ -50,7 +50,7 @@ body {
   list-style-type: none;
 }
 
-.nav__link:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
 
